@@ -1,0 +1,12 @@
+name: backend-stack
+
+include:
+  - ./database/compose.yaml
+
+networks:
+  db_connection:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  pgadmin_data:
